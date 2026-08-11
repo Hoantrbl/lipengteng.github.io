@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="#315d51"/><text x="32" y="45" text-anchor="middle" font-family="serif" font-size="42" fill="#fff">李</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#071a33"/>
+  <path d="M17 45V18h10.5c8 0 12.5 4 12.5 10.5S35.5 39 27.5 39H23v6h-6Zm6-12h4.1c4.5 0 6.8-1.4 6.8-4.5S31.6 24 27.1 24H23v9Z" fill="#fff"/>
+  <circle cx="47" cy="44" r="5" fill="#65a3ff"/>
+</svg>

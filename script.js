@@ -4,11 +4,8 @@ const emptyState = document.querySelector('.empty-state');
 
 filters.forEach((button) => {
   const tag = button.dataset.filter;
-  const count = tag === 'all'
-    ? publications.length
-    : publications.filter((item) => item.dataset.tags.split(',').includes(tag)).length;
+  const count = tag === 'all' ? publications.length : publications.filter((item) => item.dataset.tags.split(',').includes(tag)).length;
   button.querySelector('b').textContent = count;
-
   button.addEventListener('click', () => {
     filters.forEach((item) => item.classList.remove('active'));
     button.classList.add('active');
@@ -22,22 +19,18 @@ filters.forEach((button) => {
   });
 });
 
-const newsList = document.querySelector('.news-list');
-const moreNews = document.querySelector('.more-news');
-moreNews?.addEventListener('click', () => {
-  const expanded = newsList.classList.toggle('expanded');
-  moreNews.setAttribute('aria-expanded', String(expanded));
-  moreNews.innerHTML = expanded ? 'Show less <span>↑</span>' : 'Show more <span>↓</span>';
-});
-
 const toast = document.querySelector('.toast');
-document.querySelector('[data-copy-email]')?.addEventListener('click', async (event) => {
-  const email = 'your-email@example.com';
-  if (!navigator.clipboard) return;
-  event.preventDefault();
-  await navigator.clipboard.writeText(email);
-  toast.classList.add('show');
-  window.setTimeout(() => toast.classList.remove('show'), 1600);
+document.querySelectorAll('[data-copy]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      toast.textContent = `${button.dataset.label} copied`;
+      toast.classList.add('show');
+      window.setTimeout(() => toast.classList.remove('show'), 1600);
+    } catch (_) {
+      window.location.href = button.dataset.label === 'Email' ? `mailto:${button.dataset.copy}` : '#about';
+    }
+  });
 });
 
 const sections = [...document.querySelectorAll('.section-anchor')];
@@ -47,7 +40,7 @@ const observer = new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) return;
     navLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
   });
-}, { rootMargin: '-35% 0px -55%', threshold: 0 });
+}, { rootMargin: '-32% 0px -58%', threshold: 0 });
 sections.forEach((section) => observer.observe(section));
 
 document.querySelector('#year').textContent = new Date().getFullYear();
