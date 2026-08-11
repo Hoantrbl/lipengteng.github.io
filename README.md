@@ -39,3 +39,6 @@ python3 -m http.server 8000 --bind 127.0.0.1
 - GitHub 用户名：`Hoantrbl`
 - 仓库名称：`lipengteng.github.io`
 - 网站地址：`https://hoantrbl.github.io/lipengteng.github.io/`
+
+
+<!-- Deployment refresh: 2026-08-11 -->
