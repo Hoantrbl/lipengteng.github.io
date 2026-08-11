@@ -1,13 +1,7 @@
 # Pengteng Li — Academic Homepage
 
-Personal academic homepage for Pengteng Li, Ph.D. Candidate at HKUST(GZ), focused on Embodied AI, Vision-Language-Action models, and spatial intelligence.
+Personal academic homepage for Pengteng Li, hosted with GitHub Pages.
 
-Live site: https://hoantrbl.github.io/lipengteng.github.io/
-
-## Local preview
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
+- Live site: https://hoantrbl.github.io/lipengteng.github.io/
+- Style adapted from: https://github.com/luost26/academic-homepage
+- No personal portrait is used.
