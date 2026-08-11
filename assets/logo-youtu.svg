@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
+  <title id="title">Tencent Youtu Lab</title><desc id="desc">Tencent blue identification badge for Youtu Lab.</desc>
+  <rect width="360" height="92" rx="14" fill="#fff"/>
+  <g transform="translate(18 17)" fill="none" stroke="#006eff" stroke-width="7" stroke-linecap="round">
+    <path d="M6 29C18 7 45 2 65 18C47 43 22 49 6 29Z"/>
+    <path d="M17 29c10-12 25-14 38-6" opacity=".45"/>
+  </g>
+  <text x="102" y="39" fill="#17243a" font-family="Arial, PingFang SC, sans-serif" font-size="25" font-weight="700">腾讯优图</text>
+  <text x="102" y="67" fill="#006eff" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1">YOUTU LAB</text>
+</svg>
