@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 390" role="img" aria-labelledby="title desc">
+  <title id="title">个人头像占位插画</title>
+  <desc id="desc">暖色极简风格的人物头像，可替换为个人照片。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbf2d9"/><stop offset="1" stop-color="#dce9df"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#35505a"/><stop offset="1" stop-color="#21383e"/></linearGradient>
+  </defs>
+  <rect width="320" height="390" rx="14" fill="url(#bg)"/>
+  <circle cx="260" cy="67" r="38" fill="#e9b75c" opacity=".82"/>
+  <circle cx="53" cy="62" r="10" fill="#5d8b84"/>
+  <path d="M28 89h54" stroke="#7fa097" stroke-width="3"/>
+  <path d="M212 272c39-29 74-32 108-20v138H173c4-44 17-83 39-118Z" fill="#b9d1c6" opacity=".8"/>
+  <path d="M56 390c5-83 45-124 104-124s99 41 104 124" fill="url(#shirt)"/>
+  <path d="M131 219h58v74c-16 20-42 20-58 0Z" fill="#bd7e52"/>
+  <ellipse cx="160" cy="159" rx="66" ry="83" fill="#ca8b5e"/>
+  <path d="M94 146c-2-58 25-96 70-96 50 0 72 39 62 105-10-38-27-61-63-65-28-3-52 17-69 56Z" fill="#27343c"/>
+  <path d="M103 112c21-32 44-44 73-40 23 3 39 15 49 34-21-14-43-20-66-17-21 2-40 10-56 23Z" fill="#3c4b54"/>
+  <ellipse cx="135" cy="158" rx="5" ry="7" fill="#2f3536"/>
+  <ellipse cx="187" cy="158" rx="5" ry="7" fill="#2f3536"/>
+  <path d="M143 194c13 8 26 8 39-1" fill="none" stroke="#824f3b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M161 161v18l-8 4" fill="none" stroke="#a56648" stroke-width="2" stroke-linecap="round"/>
+</svg>
